@@ -1,1 +1,32 @@
+.yt{
+    height: 150px;
+    width: 200px;
+    background: red;
+    margin: 100px auto;
+    border-radius: 50% / 10%;
+    position: relative;
+}
+
+.yt::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: -5%;
+    right: -5%;
+    background: red;
+    border-radius: 5% / 50%;
+}
+
+.yt::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 45px solid #ffff;
+    top: 45px;
+    right: 65px;
+}
 
