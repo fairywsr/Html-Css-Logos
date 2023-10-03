@@ -1,1 +1,17 @@
-
+.netflix{
+  height: 240px;
+  width: 50px;
+  border-left: 50px solid red;
+  border-right: 50px solid red;
+  margin-top: 50px;
+  position: relative;
+}
+.netflix::after{
+  content: "";
+  position: absolute;
+  background: red;
+  height: inherit;
+  width: inherit;
+  transform: skew(21.5deg);
+  box-shadow: 0 0 40px black;
+}
